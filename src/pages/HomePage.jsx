@@ -111,10 +111,10 @@ const HomePage = () => {
           </div>
           {/* layouts */}
 
-          <div className="grid grid-flow-col auto-cols-auto gap-6 mt-8 ">
+          <div className="grid grid-flow-col auto-cols-auto gap-6 mt-8">
             {/* grid first column */}
 
-            <section>
+            <section >
               <div className="bg-[#001118] rounded-lg p-4">
                 <h1 className="text-2xl font-bold text-[#368DE5] mb-8">
                   Frontend
