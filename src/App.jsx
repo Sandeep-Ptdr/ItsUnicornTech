@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import Portfolio from './pages/PortfollioPage'
 import ContactUsPage from './pages/ContactUsPage'
+import ServicesPage from './pages/ServicesPage'
  
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
             <Route path='about' element={<AboutPage />}/>
             <Route path='portfolio' element={<Portfolio />}/>
             <Route path='contact' element={<ContactUsPage />}/>
-
+            <Route path='/services' element={<ServicesPage />}/>
           </Route>
         </Routes>
       </>

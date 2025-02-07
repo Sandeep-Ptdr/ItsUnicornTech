@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <button className="text-[#368DE5] text-base border border-[#368DE5] rounded-lg bg-transparent py-3 px-4  flex items-center gap-2.5 cursor-pointer">
+          <button className="text-[#368DE5] text-base border border-[#368DE5] rounded-lg bg-transparent sm:py-3 sm:px-4 px-2 py-1  flex items-center gap-2.5 cursor-pointer">
             Get top of the page <FaRegArrowAltCircleUp />
           </button>
         </div>
