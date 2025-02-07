@@ -90,18 +90,20 @@ const HomePage = () => {
 
             <div className="flex lg:gap-7 gap-0 justify-around  items-center">
               <p className="text-base w-fit font-[400] sm:text-start text-center">
-                <span className="sm:text-2xl text-lg font-medium">2+</span> Years
-                Experience
+                <span className="sm:text-2xl text-lg font-medium">2+</span>{" "}
+                Years Experience
               </p>
               <p className="text-base w-fit font-[400] sm:text-start text-center">
-                <span className="sm:text-2xl text-lg font-medium">20+</span> Websites
-                Developed
+                <span className="sm:text-2xl text-lg font-medium">20+</span>{" "}
+                Websites Developed
               </p>
               <p className="text-base w-fit font-[400] sm:text-start text-center">
-                <span className="sm:text-2xl text-lg font-medium">19+</span> Happy Clients
+                <span className="sm:text-2xl text-lg font-medium">19+</span>{" "}
+                Happy Clients
               </p>
               <p className="text-base w-fit font-[400] sm:text-start text-center">
-                <span className="sm:text-2xl text-lg font-medium">4.9</span> Client Rating
+                <span className="sm:text-2xl text-lg font-medium">4.9</span>{" "}
+                Client Rating
               </p>
             </div>
           </div>
@@ -215,7 +217,11 @@ const HomePage = () => {
 
               {/* Bottom Section */}
               <div className="mt-5 bg-[#001118]   rounded-lg overflow-hidden p-4 ">
-                <img src={unicornFrame} alt="" className="w-full lg:h-[430px] h-auto" />
+                <img
+                  src={unicornFrame}
+                  alt=""
+                  className="w-full lg:h-[430px] h-auto"
+                />
               </div>
             </section>
 

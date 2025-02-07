@@ -304,8 +304,7 @@ const AboutPage = () => {
 
         {/* What we Offer */}
         <div
-          className=" relative w-full mt-32   h-[508px] border border-[#1B006B] bg-cover bg-center "
-          style={{ backgroundImage: "url('Img/offer.png')" }}
+          className=" relative w-full mt-32  bg-[url(./assets/images/offer.png)]   h-[508px] border border-[#1B006B] bg-cover bg-center "
         >
           {/* Blur overlay */}
           <div className="absolute xl:my-10 xl:mx-20 lg:my-7 lg:mx-14  md:mx-8 md:my-4  m-4 inset-0 text-white bg-[#0B0A72]/50 backdrop-blur-lg rounded-[20px] flex flex-col justify-center items-center">
