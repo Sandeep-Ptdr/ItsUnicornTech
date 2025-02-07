@@ -3,9 +3,15 @@ import heroSectionImg from "../assets/images/heroSectionImg.png";
 import logo from "../assets/unicornLogo.svg";
 import { TbBrandRedux } from "react-icons/tb";
 import { IoLogoAngular } from "react-icons/io5";
-import { FaReact } from "react-icons/fa6";
-import { BiLogoTypescript } from "react-icons/bi";
-import { FaHtml5, FaBootstrap, FaFigma } from "react-icons/fa";
+import { FaArrowRightLong, FaReact, FaStackExchange } from "react-icons/fa6";
+import { BiArrowFromLeft, BiLogoTypescript } from "react-icons/bi";
+import {
+  FaHtml5,
+  FaBootstrap,
+  FaFigma,
+  FaStar,
+  FaStarAndCrescent,
+} from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
 import { RiNodejsLine } from "react-icons/ri";
 import { DiCodeigniter } from "react-icons/di";
@@ -71,6 +77,9 @@ import setting from "../assets/images/setting.png";
 import chip from "../assets/images/chip.png";
 import humanFaceImg from "../assets/images/humanTech.png";
 import TechnologiesTabs from "../components/TechnologiesTabs";
+
+import InfiniteScrollingCards from "../components/PortfolioCardCarousel";
+import ReviewsCarousel from "../components/ReviewsCarousel";
 
 const HomePage = () => {
   return (
@@ -540,19 +549,198 @@ const HomePage = () => {
         </div>
       </section>
 
-
-      {/*eighth section Technologies & Platforms We Work With */}
+      {/*eigth section Technologies & Platforms We Work With */}
 
       <section className="container mx-auto text-white lg:px-10 px-4 py-6 mt-24">
-
-        <h1 className="text-3xl font-bold"><span className="text-[#368DE5]">Technologies & Platforms</span> We Work With</h1>
+        <h1 className="text-3xl font-bold">
+          <span className="text-[#368DE5]">Technologies & Platforms</span> We
+          Work With
+        </h1>
 
         <div className="mt-14 w-fit mx-auto ">
           <TechnologiesTabs />
         </div>
 
+        <div className="flex justify-center items-center gap-5 mt-13 w-fit mx-auto">
+          <button className="py-3 px-5 rounded-lg text-[#368DE5] border border-[#368DE5] cursor-pointer hover:bg-gradient-to-r hover:from-[#368DE5] hover:to-[#C7BDFF] hover:text-white transition-colors duration-300 ease-in-out ">
+            Schedule a Developer Interview
+          </button>
+          <button className="py-3 px-5 rounded-lg border border-[#368DE5] text-[#368DE5] cursor-pointer hover:bg-gradient-to-r hover:from-[#368DE5] hover:to-[#C7BDFF] hover:text-white transition-colors duration-300 ease-in-out ">
+            Schedule For Project
+          </button>
+        </div>
+      </section>
 
+      {/* ninth section Mission is to Protect Your Businesses & Much More */}
+      <section className="bg-img container mx-auto w-full text-white lg:px-10 px-4 py-6 mt-20">
+        <div className="flex flex-col justify-center items-center bg-[#060966]/50  backdrop-blur-sm border border-[#368DE5]/50 py-9 px-8 w-fit mx-auto rounded-[20px] ">
+          <h1 className="text-[42px] font-bold">
+            Mission is to Protect Your Businesses & Much More
+          </h1>
 
+          <button className="border border-[#368DE5] rounded-lg py-4 px-5    mt-15 cursor-pointer text-[#368DE5] text-base font-medium hover:bg-gradient-to-r hover:from-[#368DE5] hover:to-[#C7BDFF] hover:text-white transition-colors duration-300 ease-in-out ">
+            Discover Now
+          </button>
+        </div>
+      </section>
+
+      {/* tenth section Portfolio LIst */}
+      <section className="container mx-auto text-white lg:px-10 px-4 py-6 mt-24">
+        <div className="w-full flex justify-end items-center">
+          <div className="w-fit ">
+            <p className="text-lg font-light mb-3.5">Portfolio List</p>
+            <h1 className="text-2xl font-bold">
+              Recently completed{" "}
+              <span className="text-[#368DE5]">tech projects</span> you see
+            </h1>
+          </div>
+        </div>
+        {/* cards */}
+        <div>
+          <InfiniteScrollingCards />
+        </div>
+
+        <div className="flex justify-center items-center">
+          <button className="border border-[#368DE5] rounded-lg py-4 px-5 mt-2 cursor-pointer text-[#368DE5] text-base font-medium hover:bg-gradient-to-r hover:from-[#368DE5] hover:to-[#C7BDFF] hover:text-white transition-colors duration-300 ease-in-out ">
+            View More Projects
+          </button>
+        </div>
+      </section>
+
+      <section className="container mx-auto items-end flex gap-5 text-white lg:px-10 px-4 py-6 mt-24">
+        {/* left section */}
+        <div className="w-[35%]">
+          <p className="text-lg font-light">Testimonials</p>
+          <h1 className="text-4xl font-bold">
+            <span className="text-[#368DE5]">Trusted By</span> <br /> Global
+            Customer
+          </h1>
+
+          <div className="bg-[#001118] min-h-[484px]  px-12 py-10 rounded-[20px] mt-5">
+            <p className="text-6xl font-bold">4.5</p>
+            <div className="flex text-sm gap-1 mt-4">
+              <FaStar className="text-[#368DE5]" />
+              <FaStar className="text-[#368DE5]" />
+              <FaStar className="text-[#368DE5]" />
+              <FaStar className="text-[#368DE5]" />
+              <FaStar />
+            </div>
+
+            <p className="text-2xl font-medium mt-4">(3,700 Reviews)</p>
+
+            <p className="text-4xl font-bold mt-13">
+              Client Voices, <br /> Powerful Results
+            </p>
+
+            <button className="border border-[#368DE5] py-4 px-5 mt-10 cursor-pointer text-[#368DE5] text-base font-medium hover:bg-gradient-to-r hover:from-[#368DE5] hover:to-[#C7BDFF] hover:text-white transition-colors duration-300 ease-in-out rounded-md">
+              More Testimonial
+            </button>
+          </div>
+        </div>
+
+        {/* right section */}
+
+        <div className="w-[65%]    h-full">
+          <p className="text-base font-light">
+            Trusted by global customers, we deliver reliable, high-quality
+            solutions that meet diverse needs and exceed expectations.
+          </p>
+
+          <div className="flex w-full items-center min-h-[484px] py-8 justify-center bg-[#001118] rounded-[20px] mt-5">
+            <ReviewsCarousel />
+          </div>
+        </div>
+      </section>
+
+      {/* 
+
+       how can we help section */}
+
+      <section className="container mx-auto bg-[url(./assets/images/formBgImg.png)] bg-cover bg-no-repeat bg-center   py-10 mb-16">
+        <div className="container mx-auto items-center flex  md:flex-row flex-col gap-5 text-white lg:px-10 px-4 py-6">
+          {/* left section */}
+          <div className="md:w-1/2 w-full ">
+            <h1 className="text-3xl font-bold">How can we help?</h1>
+
+            <p className="text-base font-light mt-4">
+              Please select a topic below related to your inquiry. If you don’t
+              find what you need, fill out our contact form.
+            </p>
+
+            <div className="mt-12 border-b border-white border-dashed w-fit pb-2">
+              <h3 className="text-[#7C3AED] text-2xl font-bold">
+                Hire a Developer
+              </h3>
+              <div className="flex  gap-4 mt-2">
+                <p className="text-base font-light">
+                  Hire a dedicated developer to be an indistinguishable part of{" "}
+                  <br /> your existing team
+                </p>{" "}
+                <span className="mt-1">
+                  <FaArrowRightLong className="text-[#7C3AED]" />
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-12 border-b border-white border-dashed w-fit pb-2">
+              <h3 className="text-[#7C3AED] text-2xl font-bold">Careers</h3>
+              <div className="flex  gap-4 mt-2">
+                <p className="text-base font-light">
+                  Be a part of the best work family across the globe and boost{" "}
+                  <br /> your career in Tech
+                </p>{" "}
+                <span className="mt-1">
+                  <FaArrowRightLong className="text-[#7C3AED]" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* right section */}
+
+          <div className="md:w-1/2 w-full">
+            <div className="flex justify-center items-center ">
+             <div >
+             <div className="bg-[#00070D80]/50 p-6 rounded-[20px] backdrop-blur-lg   md:w-96 w-full border border-[#7C3AED] ">
+                <form className="space-y-4">
+                  <div className="flex space-x-4">
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      className="w-1/2 bg-transparent border-b border-[#7C3AED] text-white outline-none p-2"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      className="w-1/2 bg-transparent border-b border-[#7C3AED] text-white outline-none p-2"
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    placeholder="E-mail"
+                    className="w-full bg-transparent border-b border-[#7C3AED] text-white outline-none p-2"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    className="w-full bg-transparent border-b border-[#7C3AED] text-white outline-none p-2"
+                  />
+                  <textarea
+                    placeholder="Message"
+                    className="w-full bg-transparent border-b border-[#7C3AED] text-white outline-none p-2 h-20"
+                  />
+                  <button
+                    type="submit"
+                    className="w-full bg-transparent border border-[#368DE5] text-[#368DE5] p-2 rounded-lg hover:bg-gradient-to-r hover:from-[#368DE5] hover:to-[#C7BDFF] hover:text-white transition-colors duration-300 ease-in-out cursor-pointer text-base font-medium mt-24  "
+                  >
+                    SUBMIT
+                  </button>
+                </form>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

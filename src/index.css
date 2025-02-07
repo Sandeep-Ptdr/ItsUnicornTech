@@ -1,4 +1,9 @@
 @import "tailwindcss";
 
 
- 
+.bg-img{
+    background-image: url("../src/assets/images/discoverBgImg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
