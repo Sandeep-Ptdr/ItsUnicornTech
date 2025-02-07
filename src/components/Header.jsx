@@ -3,7 +3,7 @@ import unicornLogo from '../assets/unicornLogo.svg'
 import { RiArrowDropDownLine } from "react-icons/ri";
 const Header = () => {
   return (
-    <header className="container mx-auto flex justify-between items-center text-white px-4 py-4 lg:px-10">
+    <header className="container absolute top-0 mx-auto flex justify-between items-center text-white px-4 py-4 lg:px-10">
       {/* logo */}
 
       <div>

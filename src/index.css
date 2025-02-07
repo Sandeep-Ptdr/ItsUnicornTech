@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 
+@theme {
+  --color-primary: #368DE5;
+  
+}
 .bg-img{
     background-image: url("../src/assets/images/discoverBgImg.png");
     background-size: cover;
